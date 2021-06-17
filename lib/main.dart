@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:stack_overflow/geolocator/lako_app.dart';
 
 void main() {
   runApp(MyApp());
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: LakoApp(),
     );
   }
 }
