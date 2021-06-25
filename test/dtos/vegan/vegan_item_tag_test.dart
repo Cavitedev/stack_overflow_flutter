@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter_test/flutter_test.dart';
 import 'package:stack_overflow/dtos/vegan/base_response.dart';
 import 'package:stack_overflow/dtos/vegan/model.dart';
