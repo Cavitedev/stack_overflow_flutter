@@ -1,19 +1,34 @@
-class DartClass{
+import 'dart:math';
 
-  final int _id;
-  DateTime _date;
+class Position {
+  int x;
+  int y;
 
-  DartClass(this._id, this._date,);
+  Position(this.x, this.y);
 
-  int get id => _id;
+  Position.zero() : this(0, 0);
 
-  void addYear(){
-    _date = _date.add(Duration(days: 1));
+  Position.one() : this(1, 1);
+
+  double distanceTo(Position other) {
+    var dx = other.x - x;
+    var dy = other.y - y;
+    return sqrt(dx * dx + dy * dy);
   }
 
-  @override
-  String toString() {
-    return 'DartClass{_id: $_id, date: $_date}';
+  Position divideBy(num num) {
+    return Position(x ~/ num, y ~/ num);
   }
 }
 
+main() {
+  final Position p1 = Position.one();
+
+  final p = Position(-5, 6);
+
+  print(p1.distanceTo(p));
+
+  final p0 = Position.zero();
+
+  p0.divideBy(0);
+}

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:stack_overflow/geolocator/lako_app.dart';
+import 'package:stack_overflow/presentation/keys/refresh_from_outside/refresh_outside_page_v2.dart';
 
 void main() {
   runApp(MyApp());
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: LakoApp(),
+      home: RefreshOutsidePageV2(),
     );
   }
 }
