@@ -18,7 +18,7 @@ void main() {
   });
 }
 
-Future getInitialPosition<int>() async {
+Future<int> getInitialPosition() async {
   await Future.delayed(Duration(seconds: 5));
   return 5;
 }

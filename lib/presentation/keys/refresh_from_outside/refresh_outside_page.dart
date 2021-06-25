@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 
 class RefreshOutsidePage extends StatefulWidget {
-  RefreshOutsidePage({Key? key}) : super(key: key);
+  const RefreshOutsidePage({Key? key}) : super(key: key);
 
   @override
   _RefreshOutsidePageState createState() => _RefreshOutsidePageState();
