@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:stack_overflow/presentation/animation/rotate_icon.dart';
-import 'package:stack_overflow/presentation/scaffold/home_screen.dart';
+import 'package:stack_overflow/presentation/navigation/auth_deepak/nav_sol.dart';
 
 void main() {
   runApp(MyApp());
@@ -24,7 +23,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: RotateIcon(),
+      home: LoginScreen(),
     );
   }
 }
