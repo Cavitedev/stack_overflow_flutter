@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:stack_overflow/presentation/list_grid/list_grid.dart';
 import 'package:stack_overflow/presentation/scaffold/column_spaces.dart';
 
 void main() {
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: ColumnSpaces(),
+      home: ListGrid(),
     );
   }
 }
