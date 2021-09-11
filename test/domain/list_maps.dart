@@ -28,18 +28,27 @@ void main() {
     };
 
     final values = jsonData["VALUES"];
-    final List<DataStructure> pnldata = [];
+    final List<PNLDATA> pnldata = [];
     for (final Map data in values) {
-      pnldata.add( DataStructure(data["dt_status"] as String));
+      pnldata.add(PNLDATA(
+          data['dt_name'] as String,
+          data['dt_trs'] as String,
+          data['dt_GTag'] as String,
+          data['dt_GAd'] as String,
+          data["dt_Gsum"] as String));
     }
 
-    final List<String> list = [];
+    expect(pnldata.length, 1);
   });
 }
 
-class DataStructure{
+class PNLDATA {
+  final String dt_name;
+  final String dt_trs;
+  final String dt_GTag;
+  final String dt_GAd;
+  final String dt_Gsum;
 
-  final String data;
-
-  DataStructure(this.data);
+  PNLDATA(
+      this.dt_name, this.dt_trs, this.dt_GTag, this.dt_GAd, this.dt_Gsum);
 }

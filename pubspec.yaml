@@ -23,8 +23,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
   json_annotation: ^4.0.1
   freezed_annotation: ^0.14.2
+  intl: ^0.17.0
+  http: ^0.13.3
 
 dev_dependencies:
   flutter_test:

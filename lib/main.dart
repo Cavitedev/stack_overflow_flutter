@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:stack_overflow/presentation/navigation/auth_deepak/nav_sol.dart';
+import 'package:stack_overflow/presentation/scaffold/column_spaces.dart';
 
 void main() {
   runApp(MyApp());
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: LoginScreen(),
+      home: ColumnSpaces(),
     );
   }
 }
